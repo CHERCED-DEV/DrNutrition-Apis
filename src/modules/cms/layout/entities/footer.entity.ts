@@ -8,13 +8,13 @@ export interface FooterConfig {
   brand_logo: ImgsConfig;
   nav_menu: LinkConfig[];
   newsletter: {
-    title: string,
-    input: InputConfig,
-    button: string,
+    title: string;
+    input: InputConfig;
+    button: string;
   };
   socialmedia: {
-    link: LinkConfig[],
-    img: ImgsConfig,
+    link: LinkConfig[];
+    img: ImgsConfig;
   };
   copyright: string;
 }
