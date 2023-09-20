@@ -1,57 +1,17 @@
 import { Injectable } from '@nestjs/common';
 import { HeaderConfig } from '../../entities/header.entity';
+import { CultureService } from 'src/core/services/culture/culture.service';
+import { headerDataEs, headerDataEn } from '../../data/header/header.data';
 
 @Injectable()
 export class HeaderService {
-  getHeaderConfig(): HeaderConfig {
-    const headerConfig: HeaderConfig = {
-      brand_logo: {
-        src: 'ruta-del-logo.png',
-        alt: 'Logo de la empresa',
-      },
-      nav_menu: [
-        {
-          href: '/inicio',
-          label: 'Inicio',
-        },
-        {
-          href: '/productos',
-          label: 'Productos',
-        },
-        // Agrega más elementos de menú según sea necesario
-      ],
-      search: {
-        input: {
-          type: 'text',
-          placeholder: 'Buscar...',
-        },
-        button: 'Buscar',
-      },
-      alert: [
-        {
-          main_text: '¡Oferta especial!',
-          label: 'Ver detalles',
-          link: [
-            {
-              href: '/oferta-especial',
-              label: 'Más información',
-            },
-          ],
-        },
-      ],
-      user_panel: [
-        {
-          href: '/iniciar-sesion',
-          label: 'Iniciar sesión',
-        },
-        {
-          href: '/registrarse',
-          label: 'Registrarse',
-        },
-        // Agrega más elementos al panel de usuario según sea necesario
-      ],
-    };
+  constructor(private cultureService: CultureService) {}
 
-    return headerConfig;
+  getHeaderConfig(): HeaderConfig {
+    if (this.cultureService.getCurrentCulture() === 'es') {
+      return headerDataEs;
+    } else {
+      return headerDataEn;
+    }
   }
 }
