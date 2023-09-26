@@ -1,13 +1,13 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { StaticModule } from './common/static.module';
 import { CultureMiddleware } from './core/middlewares/culture/culture.middleware';
 import { CultureService } from './core/services/culture/culture.service';
-import { LayoutModule } from './modules/cms/layout/layout.module';
-import { SeoModule } from './modules/cms/seo/seo.module';
+import { CmsModule } from './modules/cms/cms.module';
 
 @Module({
-  imports: [LayoutModule, SeoModule],
+  imports: [CmsModule, StaticModule],
   controllers: [AppController],
   providers: [AppService, CultureService],
 })

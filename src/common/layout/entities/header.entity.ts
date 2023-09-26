@@ -6,7 +6,6 @@ import {
 
 export interface HeaderConfig {
   brand_logo: ImgsConfig;
-  nav_menu: LinkConfig[];
   search: {
     input: InputConfig;
     button: string;

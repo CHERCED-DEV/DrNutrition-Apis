@@ -5,24 +5,6 @@ export const headerDataEs: HeaderConfig = {
     src: 'ruta-del-logo.png',
     alt: 'Logo de la empresa',
   },
-  nav_menu: [
-    {
-      href: '/inicio',
-      label: 'Inicio',
-    },
-    {
-      href: '/productos',
-      label: 'Productos',
-    },
-    {
-      href: '/servicios',
-      label: 'servicios',
-    },
-    {
-      href: '/blog',
-      label: 'Blog',
-    },
-  ],
   search: {
     input: {
       type: 'text',
@@ -59,24 +41,6 @@ export const headerDataEn: HeaderConfig = {
     src: 'logo-path.png',
     alt: 'Company Logo',
   },
-  nav_menu: [
-    {
-      href: '/home',
-      label: 'Home',
-    },
-    {
-      href: '/products',
-      label: 'Products',
-    },
-    {
-      href: '/services',
-      label: 'Services',
-    },
-    {
-      href: '/blog',
-      label: 'Blog',
-    },
-  ],
   search: {
     input: {
       type: 'text',
