@@ -1,20 +1,23 @@
 import {
+  ButtonGeneralConfig,
   ImgsConfig,
-  InputConfig,
   LinkConfig,
 } from 'src/shared/entities/entitys.interface';
+
+interface SocialMediaConfig {
+  link: LinkConfig[];
+  img: ImgsConfig;
+}
+
+interface CopyrightConfig {
+  title: string;
+  img: ImgsConfig;
+}
 
 export interface FooterConfig {
   brand_logo: ImgsConfig;
   nav_menu: LinkConfig[];
-  newsletter: {
-    title: string;
-    input: InputConfig;
-    button: string;
-  };
-  socialmedia: {
-    link: LinkConfig[];
-    img: ImgsConfig;
-  };
-  copyright: string;
+  newsletter: ButtonGeneralConfig;
+  socialmedia: SocialMediaConfig;
+  copyright: CopyrightConfig;
 }

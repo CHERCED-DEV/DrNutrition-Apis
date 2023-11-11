@@ -23,15 +23,22 @@ export const footerDataEs: FooterConfig = {
   socialmedia: {
     link: [
       { label: 'Facebook', href: '#' },
-      { label: 'Twitter', href: '#' },
       { label: 'Instagram', href: '#' },
+      { label: 'WhatsApp', href: '#' },
+      { label: 'Twitter', href: '#' },
     ],
     img: {
       src: 'social-icons.png',
       alt: 'Íconos de redes sociales',
     },
   },
-  copyright: '© 2023 Nombre de la Empresa. Todos los derechos reservados.',
+  copyright: {
+    title: '© 2023 Nombre de la Empresa. Todos los derechos reservados.',
+    img: {
+      src: 'logo-footer.png',
+      alt: 'Logo de la Empresa',
+    },
+  },
 };
 
 export const footerDataEn: FooterConfig = {
@@ -65,5 +72,11 @@ export const footerDataEn: FooterConfig = {
       alt: 'Social Media Icons',
     },
   },
-  copyright: '© 2023 Company Name. All rights reserved.',
+  copyright: {
+    title: '© 2023 Company Name. All rights reserved.',
+    img: {
+      src: 'footer-logo.png',
+      alt: 'Company Logo',
+    },
+  },
 };

@@ -12,3 +12,9 @@ export interface InputConfig {
   type: string;
   placeholder: string;
 }
+
+export interface ButtonGeneralConfig {
+  title: string;
+  input: InputConfig;
+  button: string;
+}
