@@ -1,11 +1,12 @@
 import {
   ButtonGeneralConfig,
   ImgsConfig,
+  InputConfig,
   LinkConfig,
 } from 'src/shared/entities/entitys.interface';
 
 interface SocialMediaConfig {
-  link: LinkConfig[];
+  link: LinkConfig;
   img: ImgsConfig;
 }
 
@@ -14,10 +15,16 @@ interface CopyrightConfig {
   img: ImgsConfig;
 }
 
+interface NewsLetterConfig {
+  title: string;
+  input: InputConfig;
+  button: ButtonGeneralConfig;
+}
+
 export interface FooterConfig {
   brand_logo: ImgsConfig;
   nav_menu: LinkConfig[];
-  newsletter: ButtonGeneralConfig;
-  socialmedia: SocialMediaConfig;
+  newsletter: NewsLetterConfig;
+  socialmedia: SocialMediaConfig[];
   copyright: CopyrightConfig;
 }

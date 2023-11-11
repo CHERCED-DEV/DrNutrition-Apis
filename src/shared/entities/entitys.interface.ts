@@ -9,12 +9,20 @@ export interface LinkConfig {
 }
 
 export interface InputConfig {
-  type: string;
+  type:
+    | 'text'
+    | 'password'
+    | 'email'
+    | 'number'
+    | 'date'
+    | 'checkbox'
+    | 'radio';
   placeholder: string;
+  value?: string | number | boolean;
 }
 
 export interface ButtonGeneralConfig {
-  title: string;
-  input: InputConfig;
-  button: string;
+  label: string;
+  type: 'button' | 'submit' | 'reset';
+  ariaLabel: string;
 }
