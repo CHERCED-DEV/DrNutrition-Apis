@@ -23,7 +23,6 @@ interface NewsLetterConfig {
 
 export interface FooterConfig {
   brand_logo: ImgsConfig;
-  nav_menu: LinkConfig[];
   newsletter: NewsLetterConfig;
   socialmedia: SocialMediaConfig[];
   copyright: CopyrightConfig;

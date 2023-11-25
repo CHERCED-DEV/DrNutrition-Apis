@@ -5,13 +5,6 @@ export const footerDataEs: FooterConfig = {
     src: 'logo-footer.png',
     alt: 'Logo de la Empresa',
   },
-  nav_menu: [
-    { label: 'Inicio', href: '#' },
-    { label: 'Acerca de nosotros', href: '#' },
-    { label: 'Servicios', href: '#' },
-    { label: 'Blog', href: '#' },
-    { label: 'Contacto', href: '#' },
-  ],
   newsletter: {
     title: 'Suscríbete a nuestro boletín',
     input: {
@@ -110,13 +103,6 @@ export const footerDataEn: FooterConfig = {
     src: 'footer-logo.png',
     alt: 'Company Logo',
   },
-  nav_menu: [
-    { label: 'Home', href: '#' },
-    { label: 'About Us', href: '#' },
-    { label: 'Services', href: '#' },
-    { label: 'Blog', href: '#' },
-    { label: 'Contact', href: '#' },
-  ],
   newsletter: {
     title: 'Subscribe to our newsletter',
     input: {
